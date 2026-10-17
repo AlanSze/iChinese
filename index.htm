@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="zh-HK" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智愛全方位中文與普通話教育解決方案</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Noto Sans TC', sans-serif; }
+        
+        /* Custom Animations */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(1deg); }
+        }
+        @keyframes float-delayed {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-14px) rotate(-1.5deg); }
+        }
+        @keyframes blob {
+            0%, 100% { transform: translate(0px, 0px) scale(1); }
+            33% { transform: translate(30px, -20px) scale(1.1); }
+            66% { transform: translate(-20px, 20px) scale(0.9); }
+        }
+
+        .animate-float { animation: float 4s ease-in-out infinite; }
+        .animate-float-delayed { animation: float-delayed 5s ease-in-out infinite; }
+        .animate-blob { animation: blob 7s infinite; }
+        
+        .card-highlight {
+            box-shadow: 0 0 0 4px #f59e0b, 0 20px 25px -5px rgba(245, 158, 11, 0.25);
+            transform: translateY(-6px);
+        }
+
+        .tab-active {
+            background-color: #1e293b;
+            color: #ffffff;
+            box-shadow: 0 10px 15px -3px rgba(15, 23, 42, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-amber-200">
+
+    <!-- ==================== BLOCK 1: BRIGHT HEADER ==================== -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200/80 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center space-x-3">
+                <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-amber-500 via-orange-500 to-indigo-600 flex items-center justify-center font-black text-white text-2xl shadow-md shadow-orange-500/20">i</div>
+                <div>
+                    <span class="text-xl font-black tracking-tight text-slate-900">i-Learner <span class="text-amber-500 font-bold text-base">智國集團</span></span>
+                    <p class="text-xs text-slate-500 font-medium">智愛中文與華語教育平台</p>
+                </div>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden lg:flex items-center space-x-6 text-sm font-semibold text-slate-600">
+                <a href="#programme-finder" class="hover:text-amber-600 transition">方案匹配</a>
+                <a href="#ilearner" class="hover:text-blue-600 transition">智愛中文</a>
+                <a href="#mandarinkey" class="hover:text-orange-600 transition">中文開門</a>
+                <a href="#pathway" class="hover:text-emerald-600 transition">漢語小徑</a>
+                <a href="#putonghua" class="hover:text-purple-600 transition">普通話天地</a>
+                <a href="#aiwriting" class="hover:text-rose-600 transition">智愛寫平台</a>
+                <a href="#huayu123" class="hover:text-teal-600 transition">華語123</a>
+                <a href="#comparison" class="hover:text-amber-600 transition">方案對比</a>
+            </nav>
+
+            <!-- Quick Finder Tool -->
+            <a href="#programme-finder" class="inline-flex items-center space-x-2 px-5 py-2.5 rounded-full bg-amber-50 hover:bg-amber-100 text-amber-700 text-sm font-bold border border-amber-200/80 shadow-sm transition transform hover:scale-105">
+                <span>🔍 尋找適合您的方案</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- ==================== BLOCK 2: BRIGHT HERO SECTION ==================== -->
+    <section class="relative bg-gradient-to-br from-indigo-50/80 via-sky-50 to-amber-50/60 py-20 lg:py-28 overflow-hidden border-b border-slate-200/60">
+        <!-- Floating Animated Background Blobs -->
+        <div class="absolute top-10 left-1/4 w-72 h-72 bg-purple-200/40 rounded-full filter blur-3xl animate-blob"></div>
+        <div class="absolute top-20 right-1/4 w-80 h-80 bg-amber-200/40 rounded-full filter blur-3xl animate-blob [animation-delay:2s]"></div>
+        <div class="absolute -bottom-10 left-1/3 w-80 h-80 bg-sky-200/40 rounded-full filter blur-3xl animate-blob [animation-delay:4s]"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            
+            <!-- Badge -->
+            <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-white/80 border border-amber-300 text-amber-800 text-sm font-bold shadow-sm mb-8 animate-bounce">
+                <span>✨ 兼具中華文化底蘊與 AI 科技創新</span>
+            </div>
+
+            <!-- Headline -->
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-slate-900 mb-6 leading-tight">
+                文脈相承・科技創新<br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 via-orange-500 to-indigo-600">
+                    全方位中文與普通話智愛解決方案
+                </span>
+            </h1>
+
+            <p class="max-w-3xl mx-auto text-lg sm:text-xl text-slate-600 font-medium leading-relaxed mb-10">
+                結合前沿 AI 科技與專業教學法，為母語、非母語及外籍華語學習者打造高成效、系統化、趣味化的中文與普通話學習體驗。
+            </p>
+
+            <!-- CTA Button -->
+            <div class="flex justify-center mb-12">
+                <a href="#programmes" class="inline-flex items-center space-x-3 px-8 py-4 rounded-2xl bg-gradient-to-r from-amber-500 via-orange-500 to-amber-500 hover:from-amber-600 hover:to-orange-600 text-white font-extrabold text-lg shadow-lg shadow-orange-500/25 transition transform hover:-translate-y-1">
+                    <span>探索 6 大項目示範 ↓</span>
+                </a>
+            </div>
+
+            <!-- Animated Floating Feature Chips -->
+            <div class="hidden md:flex justify-center flex-wrap gap-3 max-w-4xl mx-auto mb-12">
+                <span class="animate-float px-4 py-2 rounded-xl bg-white/90 text-blue-700 text-xs font-bold shadow-sm border border-blue-100">📘 12級全方位語文</span>
+                <span class="animate-float-delayed px-4 py-2 rounded-xl bg-white/90 text-orange-700 text-xs font-bold shadow-sm border border-orange-100">📙 48課電子故事與工具箱</span>
+                <span class="animate-float px-4 py-2 rounded-xl bg-white/90 text-emerald-700 text-xs font-bold shadow-sm border border-emerald-100">🟩 768本沉浸故事閱讀</span>
+                <span class="animate-float-delayed px-4 py-2 rounded-xl bg-white/90 text-purple-700 text-xs font-bold shadow-sm border border-purple-100">💜 AI 視覺化紅字糾音</span>
+                <span class="animate-float px-4 py-2 rounded-xl bg-white/90 text-rose-700 text-xs font-bold shadow-sm border border-rose-100">🔴 OCR掃描 & 蘇格拉底Bot</span>
+                <span class="animate-float-delayed px-4 py-2 rounded-xl bg-white/90 text-teal-700 text-xs font-bold shadow-sm border border-teal-100">🌐 華語123 生活職場AI對話</span>
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto pt-8 border-t border-slate-200/80">
+                <div class="p-5 rounded-2xl bg-white/80 border border-slate-200/80 shadow-sm backdrop-blur transition hover:shadow-md">
+                    <p class="text-3xl font-black text-amber-500">2,000,000+</p>
+                    <p class="text-sm font-semibold text-slate-600 mt-1">覆蓋累計學員數</p>
+                </div>
+                <div class="p-5 rounded-2xl bg-white/80 border border-slate-200/80 shadow-sm backdrop-blur transition hover:shadow-md">
+                    <p class="text-3xl font-black text-orange-500">500+</p>
+                    <p class="text-sm font-semibold text-slate-600 mt-1">合作學校 (大學、中學、小學)</p>
+                </div>
+                <div class="p-5 rounded-2xl bg-white/80 border border-slate-200/80 shadow-sm backdrop-blur transition hover:shadow-md">
+                    <p class="text-3xl font-black text-emerald-500">768+</p>
+                    <p class="text-sm font-semibold text-slate-600 mt-1">故事電子書與多元題庫</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==================== BLOCK 3: PROGRAMME FINDER ==================== -->
+    <section id="programme-finder" class="py-16 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <span class="text-amber-500 font-bold text-xs uppercase tracking-widest">Interactive Match</span>
+                <h2 class="text-3xl font-black text-slate-900 mt-1">尋找最適合您的中文學習方案</h2>
+                <p class="text-slate-600 mt-2">請點擊您的主要學習需求，系統將為您即時高亮配對推薦項目：</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+                <button onclick="filterProgramme('ilearner')" class="p-5 rounded-2xl bg-slate-50 border-2 border-slate-200/80 hover:border-blue-500 hover:bg-blue-50/50 shadow-sm text-left transition transform hover:-translate-y-1 group">
+                    <div>
+                        <span class="text-3xl mb-2 block">📘</span>
+                        <p class="font-extrabold text-slate-900 group-hover:text-blue-600">母語語文積累</p>
+                        <p class="text-xs text-slate-500 font-medium mt-1">12級全方位加強與應試</p>
+                    </div>
+                    <span class="text-xs font-bold text-blue-600 mt-4 block">智愛中文平台 ➔</span>
+                </button>
+
+                <button onclick="filterProgramme('mandarinkey')" class="p-5 rounded-2xl bg-slate-50 border-2 border-slate-200/80 hover:border-orange-500 hover:bg-orange-50/50 shadow-sm text-left transition transform hover:-translate-y-1 group">
+                    <div>
+                        <span class="text-3xl mb-2 block">📙</span>
+                        <p class="font-extrabold text-slate-900 group-hover:text-orange-600">初學者 漢字入門與故事</p>
+                        <p class="text-xs text-slate-500 font-medium mt-1">48課故事與教學工具箱</p>
+                    </div>
+                    <span class="text-xs font-bold text-orange-600 mt-4 block">中文開門 / 漢語小徑 ➔</span>
+                </button>
+
+                <button onclick="filterProgramme('putonghua')" class="p-5 rounded-2xl bg-slate-50 border-2 border-slate-200/80 hover:border-purple-500 hover:bg-purple-50/50 shadow-sm text-left transition transform hover:-translate-y-1 group">
+                    <div>
+                        <span class="text-3xl mb-2 block">💜</span>
+                        <p class="font-extrabold text-slate-900 group-hover:text-purple-600">普通話聽說與 AI 糾音</p>
+                        <p class="text-xs text-slate-500 font-medium mt-1">紅字精準糾音與對話</p>
+                    </div>
+                    <span class="text-xs font-bold text-purple-600 mt-4 block">普通話天地 ➔</span>
+                </button>
+
+                <button onclick="filterProgramme('aiwriting')" class="p-5 rounded-2xl bg-slate-50 border-2 border-slate-200/80 hover:border-rose-500 hover:bg-rose-50/50 shadow-sm text-left transition transform hover:-translate-y-1 group">
+                    <div>
+                        <span class="text-3xl mb-2 block">🔴</span>
+                        <p class="font-extrabold text-slate-900 group-hover:text-rose-600">AI 寫作教學與批改</p>
+                        <p class="text-xs text-slate-500 font-medium mt-1">OCR掃描與蘇格拉底Bot</p>
+                    </div>
+                    <span class="text-xs font-bold text-rose-600 mt-4 block">智愛寫平台 ➔</span>
+                </button>
+
+                <button onclick="filterProgramme('huayu123')" class="p-5 rounded-2xl bg-slate-50 border-2 border-slate-200/80 hover:border-teal-500 hover:bg-teal-50/50 shadow-sm text-left transition transform hover:-translate-y-1 group">
+                    <div>
+                        <span class="text-3xl mb-2 block">🌐</span>
+                        <p class="font-extrabold text-slate-900 group-hover:text-teal-600">外籍人士短期實用華語</p>
+                        <p class="text-xs text-slate-500 font-medium mt-1">生活職場與 AI 數字人</p>
+                    </div>
+                    <span class="text-xs font-bold text-teal-600 mt-4 block">華語123 ➔</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== BLOCK 4: CORE PROGRAMME CARDS ==================== -->
+    <section id="programmes" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+
+        <!-- 1. 智愛中文平台 -->
+        <div id="ilearner" class="prog-card bg-white rounded-3xl p-8 border-2 border-slate-100 shadow-md hover:shadow-xl transition-all duration-300 relative overflow-hidden">
+            <div class="w-2 h-full bg-blue-500 absolute left-0 top-0"></div>
+            <div class="mb-6 pl-2">
+                <span class="px-3 py-1 rounded-full text-xs font-bold bg-blue-100 text-blue-800 border border-blue-200">12級全方位語文平台</span>
+                <h3 class="text-3xl font-black text-slate-900 mt-2">智愛中文平台 <span class="text-lg font-medium text-slate-500">(Chinese i-Learner)</span></h3>
+            </div>
+            <p class="text-slate-600 mb-6 pl-2"><strong class="text-slate-900">適用對象：</strong>希望用更有趣的方法加強中文學習的母語學生。<br><strong class="text-slate-900">核心定位：</strong>12 級系統化課程，涵蓋聽、說、讀、寫、語文知識的全方位中文平台。</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="p-5 rounded-2xl bg-blue-50/40 border border-blue-100 hover:bg-blue-50 transition"><p class="font-bold text-blue-950 mb-1">📅 每日練習與流程</p><p class="text-xs text-slate-600">輕鬆完成讀聽寫訓練，配有淺顯易懂的「學習筆記」鞏固重點。</p></div>
+                <div class="p-5 rounded-2xl bg-blue-50/40 border border-blue-100 hover:bg-blue-50 transition"><p class="font-bold text-blue-950 mb-1">📜 文學文化增潤</p><p class="text-xs text-slate-600">精選「智學大詩人」歷代詩詞賞析及「成語畫廊」典故故事。</p></div>
+                <div class="p-5 rounded-2xl bg-blue-50/40 border border-blue-100 hover:bg-blue-50 transition"><p class="font-bold text-blue-950 mb-1">🎮 寓教於樂遊戲擂台</p><p class="text-xs text-slate-600">針對常犯語文錯誤設計關卡，在遊戲挑戰中鞏固詞彙與語意。</p></div>
+                <div class="p-5 rounded-2xl bg-blue-50/40 border border-blue-100 hover:bg-blue-50 transition"><p class="font-bold text-blue-950 mb-1">🐛 書蟲社區與部落格</p><p class="text-xs text-slate-600">金幣佈置「伴讀書蟲」空間，於「智愛部落格」發表創作作品。</p></div>
+            </div>
+        </div>
+
+        <!-- 2. 中文開門 -->
+        <div id="mandarinkey" class="prog-card bg-white rounded-3xl p-8 border-2 border-slate-100 shadow-md hover:shadow-xl transition-all duration-300 relative overflow-hidden">
+            <div class="w-2 h-full bg-orange-500 absolute left-0 top-0"></div>
+            <div class="mb-6 pl-2">
+                <span class="px-3 py-1 rounded-full text-xs font-bold bg-orange-100 text-orange-800 border border-orange-200">初學者故事學習平台</span>
+                <h3 class="text-3xl font-black text-slate-900 mt-2">中文開門 <span class="text-lg font-medium text-slate-500">(MandarinKey)</span></h3>
+            </div>
+            <p class="text-slate-600 mb-6 pl-2"><strong class="text-slate-900">適用對象：</strong>中文初學者。<br><strong class="text-slate-900">核心定位：</strong>專為中文初學者設計的故事式學習平台。</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="p-5 rounded-2xl bg-orange-50/40 border border-orange-100 hover:bg-orange-50 transition"><p class="font-bold text-orange-950 mb-1">📖 48 課動態電子故事</p><p class="text-xs text-slate-600">在真實情境中系統學習漢字書寫與中文讀音，建立良好語感。</p></div>
+                <div class="p-5 rounded-2xl bg-orange-50/40 border border-orange-100 hover:bg-orange-50 transition"><p class="font-bold text-orange-950 mb-1">🛠️ 靈活教學支援工具箱</p><p class="text-xs text-slate-600">內置 Game Maker、Quiz Maker 及筆順/拼音工作紙生成器。</p></div>
+            </div>
+        </div>
+
+        <!-- 3. 漢語小徑 -->
+        <div id="pathway" class="prog-card bg-white rounded-3xl p-8 border-2 border-slate-100 shadow-md hover:shadow-xl transition-all duration-300 relative overflow-hidden">
+            <div class="w-2 h-full bg-emerald-500 absolute left-0 top-0"></div>
+            <div class="mb-6 pl-2">
+                <span class="px-3 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800 border border-emerald-200">沉浸式故事閱讀</span>
+                <h3 class="text-3xl font-black text-slate-900 mt-2">漢語小徑 <span class="text-lg font-medium text-slate-500">(Mandarin Pathway)</span></h3>
+            </div>
+            <p class="text-slate-600 mb-6 pl-2"><strong class="text-slate-900">適用對象：</strong>中文初學者。<br><strong class="text-slate-900">核心定位：</strong>專為中文初學者設計的沉浸式故事閱讀平台。</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="p-5 rounded-2xl bg-emerald-50/40 border border-emerald-100 hover:bg-emerald-50 transition"><p class="font-bold text-emerald-950 mb-1">🗺️ 6階段24級路線圖</p><p class="text-xs text-slate-600">涵蓋從 Gravel 至 Boulders 的階梯式路線，循序漸進。</p></div>
+                <div class="p-5 rounded-2xl bg-emerald-50/40 border border-emerald-100 hover:bg-emerald-50 transition"><p class="font-bold text-emerald-950 mb-1">📚 768 本故事電子書</p><p class="text-xs text-slate-600">支援繁簡體切換、粵普雙語朗讀及拼音標注。</p></div>
+                <div class="p-5 rounded-2xl bg-emerald-50/40 border border-emerald-100 hover:bg-emerald-50 transition"><p class="font-bold text-emerald-950 mb-1">🌱 品德與批判性思考</p><p class="text-xs text-slate-600">融入多元文化、性別平權與中華傳統美德等深度主題。</p></div>
+            </div>
+        </div>
+
+        <!-- 4. 普通話天地 -->
+        <div id="putonghua" class="prog-card bg-white rounded-3xl p-8 border-2 border-slate-100 shadow-md hover:shadow-xl transition-all duration-300 relative overflow-hidden">
+            <div class="w-2 h-full bg-purple-500 absolute left-0 top-0"></div>
+            <div class="mb-6 pl-2">
+                <span class="px-3 py-1 rounded-full text-xs font-bold bg-purple-100 text-purple-800 border border-purple-200">AI 聽說與應試全方位</span>
+                <h3 class="text-3xl font-black text-slate-900 mt-2">普通話天地</h3>
+            </div>
+            <p class="text-slate-600 mb-6 pl-2"><strong class="text-slate-900">適用對象：</strong>希望提升普通話聽說能力及備考之學生。<br><strong class="text-slate-900">核心定位：</strong>結合 AI 技術的普通話聽說與應試全方位訓練平台。</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="p-5 rounded-2xl bg-purple-50/40 border border-purple-100 hover:bg-purple-50 transition"><p class="font-bold text-purple-950 mb-1">🎙️ AI 視覺化紅字糾音</p><p class="text-xs text-slate-600">實時評分，紅字精準標註聲母、韻母及聲調錯處。</p></div>
+                <div class="p-5 rounded-2xl bg-purple-50/40 border border-purple-100 hover:bg-purple-50 transition"><p class="font-bold text-purple-950 mb-1">💬 AI 情境對話練習</p><p class="text-xs text-slate-600">提供多種校園與日常情境，無壓力與 AI 角色對話。</p></div>
+                <div class="p-5 rounded-2xl bg-purple-50/40 border border-purple-100 hover:bg-purple-50 transition"><p class="font-bold text-purple-950 mb-1">🗣️ 粵普對照與拼音</p><p class="text-xs text-slate-600">針對香港學生習慣設計粵普對照與系統拼音知識。</p></div>
+                <div class="p-5 rounded-2xl bg-purple-50/40 border border-purple-100 hover:bg-purple-50 transition"><p class="font-bold text-purple-950 mb-1">📊 教師端弱項分析</p><p class="text-xs text-slate-600">自動匯總全班最常讀錯字與發音弱點，助力精準教學。</p></div>
+            </div>
+        </div>
+
+        <!-- 5. 智愛寫平台 -->
+        <div id="aiwriting" class="prog-card bg-white rounded-3xl p-8 border-2 border-slate-100 shadow-md hover:shadow-xl transition-all duration-300 relative overflow-hidden">
+            <div class="w-2 h-full bg-rose-500 absolute left-0 top-0"></div>
+            <div class="mb-6 pl-2">
+                <span class="px-3 py-1 rounded-full text-xs font-bold bg-rose-100 text-rose-800 border border-rose-200">AI 中文寫作教學與批改</span>
+                <h3 class="text-3xl font-black text-slate-900 mt-2">智愛寫平台 <span class="text-lg font-medium text-slate-500">(AI Writing Lab)</span></h3>
+            </div>
+            <p class="text-slate-600 mb-6 pl-2"><strong class="text-slate-900">適用對象：</strong>希望提升中文寫作策略之學生及需要減輕批改負擔之教師。<br><strong class="text-slate-900">核心定位：</strong>專業中文教師主導開發的 AI 中文寫作教學與批改平台。</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="p-5 rounded-2xl bg-rose-50/40 border border-rose-100 hover:bg-rose-50 transition"><p class="font-bold text-rose-950 mb-1">📷 OCR 手寫即時掃描</p><p class="text-xs text-slate-600">支援拍照或批量掃描手寫稿，OCR 即時轉化為文本。</p></div>
+                <div class="p-5 rounded-2xl bg-rose-50/40 border border-rose-100 hover:bg-rose-50 transition"><p class="font-bold text-rose-950 mb-1">🤖 蘇格拉底 AI 引導 Bot</p><p class="text-xs text-slate-600">互動對話引導審題、構思與取材，解決提筆無話可說。</p></div>
+                <div class="p-5 rounded-2xl bg-rose-50/40 border border-rose-100 hover:bg-rose-50 transition"><p class="font-bold text-rose-950 mb-1">📝 分層批改與跟進</p><p class="text-xs text-slate-600">靈活設定批改重點，即時生成專屬語法跟進練習。</p></div>
+                <div class="p-5 rounded-2xl bg-rose-50/40 border border-rose-100 hover:bg-rose-50 transition"><p class="font-bold text-rose-950 mb-1">🖥️ 一鍵講評 PPT/報告</p><p class="text-xs text-slate-600">自動匯總表現，一鍵生成講評簡報 PPT 及詳細報告。</p></div>
+            </div>
+        </div>
+
+        <!-- 6. 華語123 -->
+        <div id="huayu123" class="prog-card bg-white rounded-3xl p-8 border-2 border-slate-100 shadow-md hover:shadow-xl transition-all duration-300 relative overflow-hidden">
+            <div class="w-2 h-full bg-teal-500 absolute left-0 top-0"></div>
+            <div class="mb-6 pl-2">
+                <span class="px-3 py-1 rounded-full text-xs font-bold bg-teal-100 text-teal-800 border border-teal-200">外籍人士實用華語平台</span>
+                <h3 class="text-3xl font-black text-slate-900 mt-2">華語123 <span class="text-lg font-medium text-slate-500">(Huayu 123)</span></h3>
+            </div>
+            <p class="text-slate-600 mb-6 pl-2"><strong class="text-slate-900">適用對象：</strong>初學中文，並希望能夠短期內掌握至可以在生活和工作應用中文的外國人（零基礎至 A2 級）。<br><strong class="text-slate-900">核心定位：</strong>線上華語智能數位學習內容與輔助教學平台，專為外籍學習者打造的實用型自主學習與 AI 對話系統。</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="p-5 rounded-2xl bg-teal-50/40 border border-teal-100 hover:bg-teal-50 transition"><p class="font-bold text-teal-950 mb-1">🏙️ 20課生活職場主題</p><p class="text-xs text-slate-600">涵蓋自我介紹、餐飲、打工、金融、醫療等實用主題。</p></div>
+                <div class="p-5 rounded-2xl bg-teal-50/40 border border-teal-100 hover:bg-teal-50 transition"><p class="font-bold text-teal-950 mb-1">🌍 多語種母語輔助</p><p class="text-xs text-slate-600">支援越語、印尼語等母語輔助，降低理解門檻。</p></div>
+                <div class="p-5 rounded-2xl bg-teal-50/40 border border-teal-100 hover:bg-teal-50 transition"><p class="font-bold text-teal-950 mb-1">🤖 AI 數字人與仿真對話</p><p class="text-xs text-slate-600">數字人導師影片與主題式 AI 一對一仿真對話練習。</p></div>
+                <div class="p-5 rounded-2xl bg-teal-50/40 border border-teal-100 hover:bg-teal-50 transition"><p class="font-bold text-teal-950 mb-1">🏆 聽說讀寫與華測模擬</p><p class="text-xs text-slate-600">TOCFL A1-A2 檢定模擬、即時回饋與學習歷程排行榜。</p></div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ==================== BLOCK 5: COMPARISON TABLE ==================== -->
+    <section id="comparison" class="py-20 bg-gradient-to-b from-slate-100 to-slate-200/60 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-black text-slate-900">6大項目特色對比表</h2>
+                <p class="text-slate-600 mt-2">一覽各平台的定位、亮點與科技教學支援</p>
+            </div>
+
+            <div class="overflow-x-auto bg-white rounded-3xl shadow-lg border border-slate-200/80">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-gradient-to-r from-slate-900 to-indigo-950 text-white text-sm">
+                            <th class="p-5 font-bold border-b border-slate-800">項目名稱</th>
+                            <th class="p-5 font-bold border-b border-slate-800">主要對象與定位</th>
+                            <th class="p-5 font-bold border-b border-slate-800">核心展示亮點</th>
+                            <th class="p-5 font-bold border-b border-slate-800">科技與教學支援</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100 text-sm text-slate-700">
+                        <tr class="hover:bg-blue-50/30 transition">
+                            <td class="p-5 font-extrabold text-blue-700 whitespace-nowrap">智愛中文平台</td>
+                            <td class="p-5 font-medium">母語學生，12級全方位中文平台</td>
+                            <td class="p-5">每日練習流程、學習筆記、智學大詩人、成語畫廊、遊戲擂台、書蟲社區</td>
+                            <td class="p-5">學習進度報告、教師教材支援</td>
+                        </tr>
+                        <tr class="hover:bg-orange-50/30 transition">
+                            <td class="p-5 font-extrabold text-orange-700 whitespace-nowrap">中文開門</td>
+                            <td class="p-5 font-medium">初學者故事式學習平台</td>
+                            <td class="p-5">48課動態電子故事、漢字書寫與讀音學習</td>
+                            <td class="p-5">Game/Quiz Maker、筆順及拼音工作紙生成器</td>
+                        </tr>
+                        <tr class="hover:bg-emerald-50/30 transition">
+                            <td class="p-5 font-extrabold text-emerald-700 whitespace-nowrap">漢語小徑</td>
+                            <td class="p-5 font-medium">初學者沉浸式閱讀平台</td>
+                            <td class="p-5">6階段24級路線圖、768本故事電子書</td>
+                            <td class="p-5">繁簡切換、粵普雙語朗讀、品德教育與批判思考</td>
+                        </tr>
+                        <tr class="hover:bg-purple-50/30 transition">
+                            <td class="p-5 font-extrabold text-purple-700 whitespace-nowrap">普通話天地</td>
+                            <td class="p-5 font-medium">AI驅動普通話聽說應試平台</td>
+                            <td class="p-5">AI情境對話、視覺化紅字糾音、粵普對照</td>
+                            <td class="p-5">自動朗讀評分、全班弱項分析報告、自定義篇章</td>
+                        </tr>
+                        <tr class="hover:bg-rose-50/30 transition">
+                            <td class="p-5 font-extrabold text-rose-700 whitespace-nowrap">智愛寫平台</td>
+                            <td class="p-5 font-medium">AI中文寫作教學與批改平台</td>
+                            <td class="p-5">OCR手寫辨識、蘇格拉底AI寫作Bot</td>
+                            <td class="p-5">分層批改、班級學情報告、講評PPT一鍵生成</td>
+                        </tr>
+                        <tr class="hover:bg-teal-50/30 transition">
+                            <td class="p-5 font-extrabold text-teal-700 whitespace-nowrap">華語123</td>
+                            <td class="p-5 font-medium">外籍初學者（零基礎~A2），短期生活與工作實用平台</td>
+                            <td class="p-5">20課生活職場主題、多語種母語輔助、AI數字人影片與仿真對話</td>
+                            <td class="p-5">TOCFL檢定模擬、聽說讀寫即時回饋、國內外排行榜</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-12 text-center text-sm">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>© 2026 i-Learner 智國集團. 版權所有 All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Interactive Filter Script -->
+    <script>
+        function filterProgramme(id) {
+            document.querySelectorAll('.prog-card').forEach(card => {
+                card.classList.remove('card-highlight');
+            });
+            const target = document.getElementById(id);
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                target.classList.add('card-highlight');
+            }
+        }
+    </script>
+</body>
+</html>
+```
